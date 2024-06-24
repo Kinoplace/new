@@ -1,0 +1,881 @@
+.LightboxModalContainer {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0
+    }
+    
+    .LightboxModalHeader {
+      height: 40px;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, .5)
+    }
+    
+    .LightboxModalBody {
+      height: calc(100% - 60px);
+      width: 100%;
+      background: white;
+      overflow: hidden;
+      box-shadow: 0 7px 32px rgba(0, 0, 0, .15), 0 3px 6px rgba(0, 0, 0, .2)
+    }
+    
+    .LightboxModalBody-noscroll {
+      height: auto;
+      min-height: calc(100% - 60px);
+      overflow: auto
+    }
+    
+    .LightboxModal:not(.LightboxModal-noNestedTargeting) .LightboxModalContent *,
+    .LightboxModalBody,
+    .LightboxModalContent {
+      border-radius: 4px
+    }
+    
+    .LightboxModal-fullScreen .LightboxModalBody {
+      height: 100%
+    }
+    
+    .LightboxModal-fullScreen .LightboxModalBody,
+    .LightboxModal-fullScreen .LightboxModalContent,
+    .LightboxModal.LightboxModal-fullScreen:not(.LightboxModal-noNestedTargeting) .LightboxModalContent * {
+      border-radius: 0
+    }
+    
+    .LightboxModalClose {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background: transparent;
+      border: 0;
+      color: #d2d2d2;
+      font-weight: 600;
+      padding: 8px 3px;
+      margin-right: -3px;
+      font-size: 13px;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+      -webkit-transform: opacity .3s ease;
+      -ms-transform: opacity .3s ease;
+      transform: opacity .3s ease;
+      letter-spacing: .1px
+    }
+    
+    .LightboxModalClose:active,
+    .LightboxModalClose:hover {
+      color: white
+    }
+    
+    .LightboxModalContent {
+      height: 100%;
+      position: relative
+    }
+    
+    .LightboxModalLoadingIndicator {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate3D(-50%, -50%, 0);
+      -ms-transform: translate3D(-50%, -50%, 0);
+      transform: translate3D(-50%, -50%, 0);
+      overflow: hidden
+    }
+    
+    .LightboxModal {
+      position: absolute;
+      width: 100%;
+      max-height: 100%;
+      bottom: 0
+    }
+    
+    .LightboxModal-fullScreen.LightboxModal {
+      height: 100%
+    }
+    
+    .LightboxModal-1100x800.LightboxModal {
+      height: calc(57vh + 470px)
+    }
+    
+    .LightboxModal-600x900.LightboxModal {
+      height: calc(57vh + 520px)
+    }
+    
+    .LightboxModal-600x700.LightboxModal {
+      height: calc(57vh + 420px)
+    }
+    
+    .LightboxModal-400x600.LightboxModal {
+      height: calc(57vh + 370px)
+    }
+    
+    .LightboxModal-360x620.LightboxModal {
+      height: calc(57vh + 380px)
+    }
+    
+    .LightboxModal-390x400.LightboxModal {
+      height: calc(57vh + 270px)
+    }
+    
+    .LightboxModal-340x240.LightboxModal {
+      height: calc(57vh + 190px)
+    }
+    
+    .LightboxModalPosition {
+      position: relative;
+      width: 100%;
+      max-height: 100%
+    }
+    
+    .LightboxModal-fullScreen .LightboxModalPosition {
+      height: 100%;
+      width: 100%
+    }
+    
+    .LightboxModal-1100x800 .LightboxModalPosition {
+      height: 900px
+    }
+    
+    .LightboxModal-600x900 .LightboxModalPosition {
+      height: 1000px
+    }
+    
+    .LightboxModal-600x700 .LightboxModalPosition {
+      height: 800px
+    }
+    
+    .LightboxModal-400x600 .LightboxModalPosition {
+      height: 700px
+    }
+    
+    .LightboxModal-360x620 .LightboxModalPosition {
+      height: 720px
+    }
+    
+    .LightboxModal-390x400 .LightboxModalPosition {
+      height: 500px
+    }
+    
+    .LightboxModal-340x240 .LightboxModalPosition {
+      height: 340px
+    }
+    
+    .LightboxModalSize {
+      position: relative;
+      max-height: 100%;
+      max-width: calc(100% - 20px);
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%)
+    }
+    
+    .LightboxModal-fullScreen .LightboxModalSize {
+      width: 100%;
+      height: 100%;
+      max-width: 100%
+    }
+    
+    .LightboxModal-340x240 .LightboxModalSize {
+      height: 240px
+    }
+    
+    .LightboxModal-1100x800 .LightboxModalSize {
+      height: 860px
+    }
+    
+    .LightboxModal-600x900 .LightboxModalSize {
+      height: 960px
+    }
+    
+    .LightboxModal-600x700 .LightboxModalSize {
+      height: 760px
+    }
+    
+    .LightboxModal-400x600 .LightboxModalSize {
+      height: 660px
+    }
+    
+    .LightboxModal-360x620 .LightboxModalSize {
+      height: 680px
+    }
+    
+    .LightboxModal-390x400 .LightboxModalSize {
+      height: 460px
+    }
+    
+    .LightboxModal-340x240 .LightboxModalSize {
+      width: 340px
+    }
+    
+    .LightboxModal-1100x800 .LightboxModalSize {
+      width: 1100px
+    }
+    
+    .LightboxModal-600x700 .LightboxModalSize,
+    .LightboxModal-600x900 .LightboxModalSize {
+      width: 600px
+    }
+    
+    .LightboxModal-400x600 .LightboxModalSize {
+      width: 400px
+    }
+    
+    .LightboxModal-360x620 .LightboxModalSize {
+      width: 360px
+    }
+    
+    .LightboxModal-390x400 .LightboxModalSize {
+      width: 390px
+    }
+    
+    .LightboxModal-fullScreen .LightboxModalContainer {
+      border-radius: 0
+    }
+    
+    @media (max-width:1120px) {
+      .LightboxModal-1100x800 .LightboxModalPosition,
+      .LightboxModal-1100x800 .LightboxModalSize,
+      .LightboxModal-1100x800.LightboxModal {
+        height: 100%;
+        width: 100%
+      }
+      .LightboxModal-1100x800 .LightboxModalBody {
+        height: calc(100% - 55px)
+      }
+      .LightboxModal.LightboxModal-1100x800.LightboxModal-closeHidden .LightboxModalBody {
+        height: calc(100% - 30px)
+      }
+      .LightboxModal.LightboxModal-1100x800.LightboxModal-closeHidden .LightboxModalHeader {
+        height: 15px
+      }
+      .LightboxModal-1100x800 .LightboxModalClose {
+        text-shadow: none
+      }
+      .LightboxModal-1100x800 .LightboxModalBody,
+      .LightboxModal-1100x800 .LightboxModalContent,
+      .LightboxModal-1100x800:not(.LightboxModal-noNestedTargeting) .LightboxModalContent * {
+        border-radius: 8px
+      }
+    }
+    
+    @media (max-width:620px) {
+      .LightboxModal-600x700 .LightboxModalPosition,
+      .LightboxModal-600x700 .LightboxModalSize,
+      .LightboxModal-600x700.LightboxModal {
+        height: 100%;
+        width: 100%
+      }
+      .LightboxModal-600x700 .LightboxModalBody {
+        height: calc(100% - 55px)
+      }
+      .LightboxModal.LightboxModal-600x700.LightboxModal-closeHidden .LightboxModalBody {
+        height: calc(100% - 30px)
+      }
+      .LightboxModal.LightboxModal-600x700.LightboxModal-closeHidden .LightboxModalHeader {
+        height: 15px
+      }
+      .LightboxModal-600x700 .LightboxModalClose {
+        text-shadow: none
+      }
+      .LightboxModal-600x700 .LightboxModalBody,
+      .LightboxModal-600x700 .LightboxModalContent,
+      .LightboxModal-600x700:not(.LightboxModal-noNestedTargeting) .LightboxModalContent * {
+        border-radius: 8px
+      }
+      .LightboxModal-600x900 .LightboxModalPosition,
+      .LightboxModal-600x900 .LightboxModalSize,
+      .LightboxModal-600x900.LightboxModal {
+        height: 100%;
+        width: 100%
+      }
+      .LightboxModal-600x900 .LightboxModalBody {
+        height: calc(100% - 55px)
+      }
+      .LightboxModal.LightboxModal-600x900.LightboxModal-closeHidden .LightboxModalBody {
+        height: calc(100% - 30px)
+      }
+      .LightboxModal.LightboxModal-600x900.LightboxModal-closeHidden .LightboxModalHeader {
+        height: 15px
+      }
+      .LightboxModal-600x900 .LightboxModalClose {
+        text-shadow: none
+      }
+      .LightboxModal-600x900 .LightboxModalBody,
+      .LightboxModal-600x900 .LightboxModalContent,
+      .LightboxModal-600x900:not(.LightboxModal-noNestedTargeting) .LightboxModalContent * {
+        border-radius: 8px
+      }
+    }
+    
+    @media (max-width:420px) {
+      .LightboxModal.LightboxModal-open.LightboxModal-400x600 {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px)
+      }
+      .LightboxModal-400x600 .LightboxModalPosition,
+      .LightboxModal-400x600 .LightboxModalSize,
+      .LightboxModal-400x600.LightboxModal {
+        height: 100%;
+        width: 100%
+      }
+      .LightboxModal-400x600 .LightboxModalBody {
+        height: calc(100% - 55px)
+      }
+      .LightboxModal.LightboxModal-400x600.LightboxModal-closeHidden .LightboxModalBody {
+        height: calc(100% - 30px)
+      }
+      .LightboxModal.LightboxModal-400x600.LightboxModal-closeHidden .LightboxModalHeader {
+        height: 15px
+      }
+      .LightboxModal-400x600 .LightboxModalClose {
+        text-shadow: none
+      }
+      .LightboxModal-400x600 .LightboxModalBody,
+      .LightboxModal-400x600 .LightboxModalContent,
+      .LightboxModal-400x600:not(.LightboxModal-noNestedTargeting) .LightboxModalContent * {
+        border-radius: 8px
+      }
+    }
+    
+    @media (max-width:410px) {
+      .LightboxModal.LightboxModal-open.LightboxModal-390x400 {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px)
+      }
+      .LightboxModal-390x400 .LightboxModalPosition,
+      .LightboxModal-390x400 .LightboxModalSize,
+      .LightboxModal-390x400.LightboxModal {
+        height: 100%;
+        width: 100%
+      }
+      .LightboxModal-390x400 .LightboxModalBody {
+        height: calc(100% - 55px)
+      }
+      .LightboxModal.LightboxModal-390x400.LightboxModal-closeHidden .LightboxModalBody {
+        height: calc(100% - 30px)
+      }
+      .LightboxModal.LightboxModal-390x400.LightboxModal-closeHidden .LightboxModalHeader {
+        height: 15px
+      }
+      .LightboxModal-390x400 .LightboxModalClose {
+        text-shadow: none
+      }
+      .LightboxModal-390x400 .LightboxModalBody,
+      .LightboxModal-390x400 .LightboxModalContent,
+      .LightboxModal-390x400:not(.LightboxModal-noNestedTargeting) .LightboxModalContent * {
+        border-radius: 8px
+      }
+    }
+    
+    @media (max-width:430px) {
+      .LightboxModal.LightboxModal-open.LightboxModal-360x620 {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px)
+      }
+      .LightboxModal-360x620 .LightboxModalPosition,
+      .LightboxModal-360x620 .LightboxModalSize,
+      .LightboxModal-360x620.LightboxModal {
+        height: 100%;
+        width: 100%
+      }
+      .LightboxModal-360x620 .LightboxModalSize {
+        max-width: 100%
+      }
+      .LightboxModal-360x620 .LightboxModalBody,
+      .LightboxModal.LightboxModal-360x620.LightboxModal-closeHidden .LightboxModalBody {
+        height: 100%
+      }
+      .LightboxModal-360x620 .LightboxModalHeader,
+      .LightboxModal.LightboxModal-360x620.LightboxModal-closeHidden .LightboxModalHeader {
+        height: 0
+      }
+      .LightboxModal-360x620 .LightboxModalClose {
+        text-shadow: none
+      }
+      .LightboxModal-360x620 .LightboxModalBody,
+      .LightboxModal-360x620 .LightboxModalContent,
+      .LightboxModal-360x620 .LightboxModalContent .AppContainer,
+      .LightboxModal-360x620 .LightboxModalContent .PaneLayoutNavBar {
+        border-radius: 0
+      }
+    }
+    
+    .LightboxModal {
+      transition: -webkit-backdrop-filter .2s ease-in-out;
+      transition: backdrop-filter .2s ease-in-out;
+      transition: backdrop-filter .2s ease-in-out, -webkit-backdrop-filter .2s ease-in-out
+    }
+    
+    .LightboxModal.LightboxModal-open {
+      transition: -webkit-backdrop-filter .4s ease-in-out;
+      transition: backdrop-filter .4s ease-in-out;
+      transition: backdrop-filter .4s ease-in-out, -webkit-backdrop-filter .4s ease-in-out;
+      transition-delay: .1s
+    }
+    
+    .LightboxModalContainer {
+      opacity: 0;
+      -webkit-transform: scale(.95);
+      -ms-transform: scale(.95);
+      transform: scale(.95);
+      -webkit-transform-origin: bottom center;
+      -ms-transform-origin: bottom center;
+      transform-origin: bottom center;
+      transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in;
+      transition: opacity .2s ease-in-out, transform .2s ease-in;
+      transition: opacity .2s ease-in-out, transform .2s ease-in, -webkit-transform .2s ease-in
+    }
+    
+    .LightboxModal-open .LightboxModalContainer {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      transition: opacity .35s ease-in-out, -webkit-transform .35s ease-out;
+      transition: opacity .35s ease-in-out, transform .35s ease-out;
+      transition: opacity .35s ease-in-out, transform .35s ease-out, -webkit-transform .35s ease-out;
+      transition-delay: .1s
+    }
+    
+    .LightboxModalLoadingIndicator {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+      transform: translate3d(-50%, -50%, 0) scale(1);
+      transition: opacity .4s ease-in-out, -webkit-transform .4s ease-in-out;
+      transition: opacity .4s ease-in-out, transform .4s ease-in-out;
+      transition: opacity .4s ease-in-out, transform .4s ease-in-out, -webkit-transform .4s ease-in-out
+    }
+    
+    .LightboxModal-fullScreen .LightboxModalContainer {
+      transition: none
+    }
+    
+    .LightboxModal-contentLoaded .LightboxModalLoadingIndicator {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(.9);
+      transform: translate3d(-50%, -50%, 0) scale(.9)
+    }
+    
+    .LightboxModalContent {
+      transition: opacity .4s ease-in-out;
+      transition-delay: .2s
+    }
+    
+    .Spinner {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+    
+    .Spinner,
+    .Spinner-svg {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex
+    }
+    
+    .Spinner-svg {
+      position: relative;
+      height: 48px;
+      width: 48px
+    }
+    
+    .Spinner-ellipse {
+      fill: transparent;
+      stroke: var(--checkout-light-gray-background, rgba(0, 0, 0, .03));
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-dasharray: 60;
+      stroke-dashoffset: 20;
+      -webkit-animation: SpinnerAnimationShow .25s ease normal, SpinnerAnimationRotation .6s linear infinite;
+      animation: SpinnerAnimationShow .25s ease normal, SpinnerAnimationRotation .6s linear infinite;
+      transition-property: opacity, -webkit-transform;
+      transition-property: opacity, transform;
+      transition-property: opacity, transform, -webkit-transform;
+      transition-timing-function: ease;
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%
+    }
+    
+    @-webkit-keyframes SpinnerAnimationShow {
+      0% {
+        opacity: 0
+      }
+      to {
+        opacity: 1
+      }
+    }
+    
+    @keyframes SpinnerAnimationShow {
+      0% {
+        opacity: 0
+      }
+      to {
+        opacity: 1
+      }
+    }
+    
+    @-webkit-keyframes SpinnerAnimationRotation {
+      0% {
+        -webkit-transform: scaleX(-1) rotate(0);
+        transform: scaleX(-1) rotate(0)
+      }
+      50% {
+        -webkit-transform: scaleX(-1) rotate(-180deg);
+        transform: scaleX(-1) rotate(-180deg)
+      }
+      to {
+        -webkit-transform: scaleX(-1) rotate(-1turn);
+        transform: scaleX(-1) rotate(-1turn)
+      }
+    }
+    
+    @keyframes SpinnerAnimationRotation {
+      0% {
+        -webkit-transform: scaleX(-1) rotate(0);
+        transform: scaleX(-1) rotate(0)
+      }
+      50% {
+        -webkit-transform: scaleX(-1) rotate(-180deg);
+        transform: scaleX(-1) rotate(-180deg)
+      }
+      to {
+        -webkit-transform: scaleX(-1) rotate(-1turn);
+        transform: scaleX(-1) rotate(-1turn)
+      }
+    }
+    
+    .LoadingScreen {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column
+    }
+    
+    .LoadingScreen-brand-amex {
+      margin-top: 48px;
+      height: 72px
+    }
+    
+    .LoadingScreen-brand-unionpay {
+      margin-top: 48px;
+      height: 60px
+    }
+    
+    .OneClickAuthn-Button,
+    .OneClickAuthn-Screen {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+      font-smoothing: antialiased
+    }
+    
+    .OneClickAuthn-Screen {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 25px;
+      height: 100%;
+      box-sizing: border-box;
+      position: relative
+    }
+    
+    .OneClickAuthn-Stripe {
+      color: #635bff
+    }
+    
+    .OneClickAuthn-Brand {
+      margin: 5px 0
+    }
+    
+    .OneClickAuthn-Background {
+      position: absolute;
+      top: -10px;
+      left: 0
+    }
+    
+    .OneClickAuthn-Screen-Content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      overflow: hidden;
+      position: relative
+    }
+    
+    .OneClickAuthn-Headline {
+      color: #1a1f36;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      min-height: 100px;
+      margin-right: 80px
+    }
+    
+    .OneClickAuthn-Headline__brand {
+      color: #1a1f36;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      min-height: 80px;
+      margin-right: 80px
+    }
+    
+    .OneClickAuthn-Content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      overflow: auto
+    }
+    
+    .OneClickAuthn-Card,
+    .OneClickAuthn-Content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex
+    }
+    
+    .OneClickAuthn-Card {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 6px;
+      background: #f7fafc;
+      border: 1px solid #e3e8ee;
+      border-radius: 4px;
+      margin: 15px 0;
+      color: #697386;
+      font-size: 12px
+    }
+    
+    .OneClickAuthn-Card-Icon {
+      height: 24px;
+      width: 38px;
+      margin-right: 6px
+    }
+    
+    .OneClickAuthn-Text {
+      color: #3c4257;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0
+    }
+    
+    .OneClickAuthn-Legal {
+      color: #697386;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center
+    }
+    
+    .OneClickAuthn-Legal a,
+    .OneClickAuthn-Text a {
+      color: #635bff;
+      text-decoration: none
+    }
+    
+    .OneClickAuthn-Button {
+      border: 1px solid;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(60, 66, 87, .12);
+      display: block;
+      padding: 0;
+      width: 100%;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center
+    }
+    
+    .OneClickAuthn-Button+.OneClickAuthn-Button {
+      margin-top: 10px
+    }
+    
+    .OneClickAuthn-Button--Primary {
+      background: #635bff;
+      border-color: #635bff;
+      color: #fff
+    }
+    
+    .OneClickAuthn-Button--Secondary {
+      background: #fff;
+      border-color: rgba(60, 66, 87, .2);
+      color: #3c4257
+    }
+    
+    .OneClickAuthn-Button--Biometrics {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      background: #635bff;
+      border-color: #635bff;
+      color: #fff;
+      padding: 0 20px;
+      width: auto
+    }
+    
+    .OneClickAuthn-Biometrics {
+      margin: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column
+    }
+    
+    .OneClickAuthn-TouchID-Logo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 40px
+    }
+    
+    .OneClickAuthn-TouchFaceID-Logo {
+      width: 110px;
+      height: 110px;
+      margin: 0 10px 40px
+    }
+    
+    .OneClickAuthn-FingerprintFaceScan-Logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 10px 40px
+    }
+    
+    .OneClickAuthn-WindowsHello-Logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 40px
+    }
+    
+    .OneClickAuthn-Footer-Terms {
+      padding-top: 25px;
+      padding-bottom: 0;
+      text-align: center;
+      color: #a3acb9;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px
+    }
+    
+    .OneClickAuthn-Footer-Terms .OneClickAuthn-Stripe {
+      color: inherit;
+      width: 34px;
+      height: 14px;
+      margin-bottom: 1px;
+      vertical-align: middle
+    }
+    
+    .OneClickAuthn-Footer-Terms a {
+      color: inherit;
+      text-decoration: none
+    }
+    
+    .OneClickAuthn-Footer-Terms-Divider {
+      margin: 0 16px
+    }
+    
+    .ThreeDS2-container {
+      overflow: auto;
+      -webkit-overflow-scrolling: touch
+    }
+    
+    .ThreeDS2-challenge,
+    .ThreeDS2-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%
+    }
+    
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
+    
+    html {
+      font-size: 14px
+    }
+    
+    body,
+    html {
+      margin: 0;
+      padding: 0
+    }
+    
+    body {
+      font-family: sans-serif
+    }
+    
+    #loader,
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      position: relative
+    }
